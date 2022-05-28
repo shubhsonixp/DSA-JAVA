@@ -1,4 +1,16 @@
 //reverse an array
+/* test case
+Test Case Input
+2
+6 3
+1 2 3 4 5 6
+5 2
+10 9 8 7 6
+Desired Output
+1 2 3 4 6 5 
+10 9 8 6 7 
+*/
+
 import java.util.*;
 public class problem7{
     public static void main(String[] args) {
@@ -22,5 +34,22 @@ public class problem7{
             }
             System.out.println(Arrays.toString(arr2));
         }
+        sc.close();
     }
 }
+
+/*
+optimal code solution
+ public static void reverseArray(ArrayList<Integer> arr, int m)
+    {
+        // Write your code here.
+       int value=arr.size()-1;
+       int j=m+1;
+       while(j<value+1){
+           int temp=arr.get(j);
+               arr.set(j,arr.get(value));
+               arr.set(value,temp);
+               value--;
+               j++;
+       }
+*/       

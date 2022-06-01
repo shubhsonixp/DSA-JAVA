@@ -35,7 +35,7 @@ Sample Output
 2 2 2 2 2 3 3 5
 */
 import java.util.*;
-public class prbolem24 {
+public class problem24 {
     public static void main(String[] args){
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
